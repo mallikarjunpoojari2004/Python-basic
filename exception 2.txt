@@ -1,0 +1,32 @@
+print("starting line")
+a = [11, 22, 33]
+print(a)
+
+print(a[1])
+try:
+    a= 10 / 2
+    print(a)
+except NameError:
+        print("exception raised due to undefined variable")
+except IndexError:
+    print("exception raised due to index out of rang")
+except ZeroDivisionError:
+    print("exception raised due to zero division error")
+except:
+        print("Some exception raised")
+else:
+    print("No exception raised,everything worked")
+finally:
+    print("This is a final block")
+print("Outside try block")
+
+
+ouput:
+
+starting line
+[11, 22, 33]
+22
+5.0
+No exception raised,everything worked
+This is a final block
+Outside try block
